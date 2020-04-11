@@ -29,7 +29,7 @@ def puzzle():
 
 while True:
     with requests.Session() as c:
-        data = {'username': 'akulchhillar','password': 'batman$0'}
+        data = {'username': 'username','password': 'password'}
         c.post("https://lichess.org/login?referrer=%2F",data=data)
         p_id = puzzle()
         url = "https://lichess.org/training/%s" %(p_id)
